@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Practice">
+<test name="Automation Practice App Test Cases">
+<classes>
+<class name="com.ap.ui.testcase.LoginTest"></class>
+<class name="com.ap.ui.testcase.ContactsTest"></class>	
+<class name="com.ap.ui.testcase.SearchItemTest"></class>	
+</classes>
+</test>
+</suite>

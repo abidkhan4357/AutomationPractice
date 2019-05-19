@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.ap.ui.testcase.AddWishlistTest"/>
+      <class name="com.ap.ui.testcase.CheckOutProductTest"/>
+      <class name="com.ap.ui.testcase.ContactsTest"/>
+      <class name="com.ap.ui.testcase.HomePageTest"/>
+      <class name="com.ap.ui.testcase.LoginTest"/>
+      <class name="com.ap.ui.testcase.SearchItemTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.ap.ui.testcase.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.HomePageTest -->
+      <class name="com.ap.ui.testcase.AddWishlistTest">
+        <methods>
+          <include name="setUpdriver"/>
+          <include name="testAddProductToWishList"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.AddWishlistTest -->
+      <class name="com.ap.ui.testcase.LoginTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.LoginTest -->
+      <class name="com.ap.ui.testcase.ContactsTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.ContactsTest -->
+      <class name="com.ap.ui.testcase.SearchItemTest">
+        <methods>
+          <include name="testSearchItem"/>
+          <include name="tearDown"/>
+          <include name="setUpdriver"/>
+        </methods>
+      </class> <!-- com.ap.ui.testcase.SearchItemTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->
